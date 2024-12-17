@@ -1,0 +1,108 @@
+.frame-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 32px;
+  max-width: 100%;
+}
+.landing-page-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.we-are-a {
+  margin: 0;
+  width: 785px;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.we-are-a-global-boutique-real-wrapper {
+  width: 1293px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.transfer-container-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 83px;
+  max-width: 100%;
+}
+.about,
+.landing-page,
+.transfer-container-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about {
+  width: 1342px;
+  align-items: flex-start;
+  gap: var(--gap-26xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font1-size);
+  color: var(--color-black);
+  font-family: var(--font);
+}
+.landing-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: var(--padding-15xl) var(--padding-6xl) 66px;
+  box-sizing: border-box;
+  gap: 112px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1050px) {
+  .we-are-a {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frame-parent {
+    gap: var(--gap-base);
+  }
+  .transfer-container-parent {
+    gap: 41px;
+  }
+  .about {
+    gap: var(--gap-3xl);
+  }
+  .landing-page {
+    gap: 56px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .we-are-a {
+    font-size: var(--font-size-11xl);
+    line-height: 36px;
+  }
+  .transfer-container-parent {
+    gap: 21px;
+  }
+  .landing-page {
+    gap: 28px;
+  }
+}

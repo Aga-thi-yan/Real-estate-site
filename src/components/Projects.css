@@ -1,0 +1,231 @@
+.best-project-of {
+  position: relative;
+  line-height: 120%;
+}
+.project-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs);
+}
+.our-recent-projects {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.group-icon {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  min-height: 45px;
+}
+.frame-container,
+.project-cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-container {
+  height: 45px;
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.project-cards {
+  flex-direction: column;
+  padding: var(--padding-5xs) 0 0;
+}
+.recent-projects-container,
+.recent-projects-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.recent-projects-header {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.recent-projects-container {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-12xs) 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.image-placeholders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-400);
+  border: 1px solid var(--color-silver);
+  box-sizing: border-box;
+}
+.card-info-icon {
+  align-self: stretch;
+  height: auto;
+  position: relative;
+  border-radius: var(--br-sm);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.sobha-hearland-ii1 {
+  position: relative;
+  font-size: var(--font-size-2xl);
+  line-height: 120%;
+  font-weight: 600;
+  z-index: 1;
+}
+.lorem-ipsum-dolor2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  z-index: 1;
+}
+.starinactivebig-icon5 {
+  height: 17.3px;
+  width: 16.6px;
+  position: relative;
+}
+.stars1 {
+  height: 17.8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs-5);
+  z-index: 1;
+}
+.starsvalue1 {
+  position: relative;
+  line-height: 120%;
+  display: inline-block;
+  min-width: 33px;
+  z-index: 1;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.card-title,
+.card-title-wrapper,
+.image-placeholders-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.card-title {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-mid);
+}
+.card-title-wrapper,
+.image-placeholders-parent {
+  box-sizing: border-box;
+}
+.card-title-wrapper {
+  width: 377px;
+  flex-direction: row;
+  padding: 0 var(--padding-5xl);
+}
+.image-placeholders-parent {
+  flex-direction: column;
+  padding: 0 0 var(--padding-6xl);
+  position: relative;
+  gap: var(--gap-5xl);
+}
+.project-card,
+.recent-projects {
+  align-self: stretch;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.project-card {
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  grid-template-columns: repeat(3, minmax(335px, 1fr));
+  font-size: var(--font-size-base);
+}
+.recent-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-26xl);
+  font-size: var(--font1-size);
+}
+.project-content,
+.projects1 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.project-content {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.projects1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-9xs) 0 var(--padding-8xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font);
+}
+@media screen and (max-width: 1200px) {
+  .project-card {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(335px, 581px));
+  }
+}
+@media screen and (max-width: 1050px) {
+  .our-recent-projects {
+    font-size: var(--font-size-21xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .recent-projects-header {
+    flex-wrap: wrap;
+  }
+  .project-card {
+    grid-template-columns: minmax(335px, 1fr);
+  }
+  .recent-projects {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .our-recent-projects {
+    font-size: var(--font-size-11xl);
+    line-height: 36px;
+  }
+  .sobha-hearland-ii1 {
+    font-size: var(--font-size-mid);
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+.frame-child {
+  position: absolute;
+  top: 11.5px;
+  left: 0;
+  border-radius: var(--br-11xs);
+  background-color: var(--color-gray-300);
+  width: 16px;
+  height: 16px;
+}
+.frame-item {
+  position: absolute;
+  top: 15.5px;
+  left: 5px;
+  background-color: var(--color-white);
+  width: 6px;
+  height: 9px;
+  z-index: 1;
+}
+.frame-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xl);
+  width: 16px;
+  height: 11.5px;
+}
+.build-icon,
+.rectangle-parent {
+  height: 27.5px;
+  width: 16px;
+  position: relative;
+}
+.build-icon {
+  height: 17.1px;
+  width: 67.9px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  z-index: 1;
+}
